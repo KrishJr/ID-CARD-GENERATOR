@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+}
+
+input[type='text'] {
+    padding: 5px;
+    outline: 0;
+    border: 0px;
+}
+
+.title {
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+
+.main {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    flex: 0.5 !important;
+}
+
+.right {
+    flex: 0.5 !important;
+}
+
+button {
+    background: black;
+    outline: 0;
+    color: white;
+    width: 50%;
+    padding: 5px 10px;
+    border: 0;
+}
+
+form {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    width: 230px;
+    justify-content: center;
+}
+
+form>div {
+    margin-bottom: 10px;
+}
+
+form>div>div {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+form>div>div>i {
+    padding: 4px;
+}
+
+.card {
+    height: 200px;
+    width: 450px;
+    display: flex;
+}
+
+#id_profile_output {
+    margin-left: 20%;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+.left_id {
+    background: linear-gradient(to top, #4047F0, #8f94fb);
+    flex: 0.4;
+}
+
+.right_id {
+    flex: 0.6;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px gainsboro;
+    background: whitesmoke;
+    color: gray;
+}
+
+.right_id>div>span {
+    color: black;
+}
+
+.sub-title {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}

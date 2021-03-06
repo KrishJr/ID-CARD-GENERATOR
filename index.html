@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='title'>ID Card Generator</div>
+
+    <div class='main'>
+        <div class='left'>
+            <h1 style="color:black;font-size:30px;text-align: center;margin-top: 10px;">Enter Student Details</h1>
+            <form class='generate-id' method="post">
+                <div>
+                    Name
+                    <div>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="name" id="id_name">
+                    </div>
+                </div>
+
+                <div>
+                    College
+                    <div>
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <input type="text" name="college" id="id_college">
+                    </div>
+                </div>
+                <div>
+                    Location
+                    <div>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" name="location" id="id_location">
+                    </div>
+                </div>
+                <div>
+                    Picture
+                    <input type="file" onchange="loadImage(event)" name="profile_img" id="id_profile">
+                    <img height='70' width='70' id='id_preview_image' style="margin-top: 10px;display:none;" />
+                </div>
+
+                <button type="submit">Generate Card</button>
+            </form>
+        </div>
+
+        <div class='right' style="visibility: hidden;">
+            <p class='sub-title'>Generate ID Card</p>
+            <div class='card'>
+                <div class='left_id'>
+                    <img height='100' width='100' id='id_profile_output' />
+                </div>
+                <div class='right_id'>
+                    <div>Name : <span name="" id='id_name_output'></span></div>
+                    <div>College : <span name="" id='id_college_output'></span></div>
+                    <div>Location :<span name="" id='id_location_output'></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
